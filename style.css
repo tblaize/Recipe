@@ -8,17 +8,28 @@
     font-family: Young-serif ;
     src: url(fonts/young-serif/YoungSerif-Regular.ttf);
 }
+
+
+
 body{
     margin: 0;
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
+    
 }
 
-/*.containter{
+h3{
+    color:  hsl(14, 45%, 36%);
+    font-family: young-serif;
+}
+
+/* .containter{
     margin: auto;
     width: 500px;
-}*/
+} */
 
 img{
-    width: 500px;
+    width: 90%;
     border-radius: 32px;
     align-self: center;
     margin: 50px;
@@ -38,8 +49,8 @@ img{
 }
 
 .Prep{
-    margin: 0 50px;
-    width: 500px;
+    margin: 0 50px 0 50px;
+    width: 100%;
     background-color: hsl(330, 100%, 98%);
     padding: 20px;
     border-radius: 16px;
@@ -48,6 +59,8 @@ img{
 .Prep h3{
     font-family: Outfits;
     margin-bottom: 0;
+    margin-left: 20px;
+    color: hsl(332, 51%, 32%);
 }
 
 .Prep ul{
@@ -58,31 +71,45 @@ img{
 
 .ingredients{
     margin: 0 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 .ingredients h3{
     font-family: young-serif;
-    margin-bottom: 32px;
-}
-.ingredients p{
-    font-family: outfits;
-    font-size: 14px;
-    color: Nutmeg: hsl(14, 45%, 36%);
 }
 
-.p4{
+.ingredients ul{
+    font-family: outfits;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.instructions{
     margin: 0 50px;
 }
 
-.p4 h1{
+.instructions h1{
     font-family: young-serif;
     margin-bottom:32px;
 }
-.p4 p{
+.instructions ol{
     font-family: outfits;
-    font-size: 14px;
+    font-size: 14px;    
+    margin-left: none;
 }
 
+.instructions ol li{
+    margin-bottom: 1rem;
+    counter-increment: my-counter;
+    padding-left: 20px;
+    line-height: 1.6em;
+}
+
+.instructions ol li::marker{
+    color: hsl(24, 5%, 18%);
+    font-weight: bold;
+}
 .table{
     margin: 50px;
 }
@@ -90,6 +117,21 @@ img{
 .table h3{
     font-family: young-serif;
 }
+
+.table p{
+    font-family: outfits;
+    font-size: 14px;
+}
+
+.table table tr td{
+    font-family: outfits;
+    font-size: 14px;
+    padding: 20px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    column-gap: 100px;
+}
+
 span{
     font-weight: bold;
 }
+
