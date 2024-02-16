@@ -126,9 +126,11 @@ img{
 .table table tr td{
     font-family: outfits;
     font-size: 14px;
-    padding: 20px;
+    /* padding: 20px; */
+    padding-right: 20em;
+    padding: 2em 20em 2em 2em;
     border-bottom: 1px solid hsl(30, 18%, 87%);
-    column-gap: 100px;
+    
 }
 
 span{
